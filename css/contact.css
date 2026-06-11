@@ -2,3 +2,124 @@
     border: 1px solid black;
     height: 44px;
 }
+
+
+
+
+
+/* ==========================
+   RESPONSIVE CSS
+========================== */
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container .container-left,
+    .container .container-right3 {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .container .container-left img {
+        width: 50%;
+        height: auto !important;
+    }
+
+    .container .container-right3 .form {
+        width: 90%;
+        margin: auto;
+    }
+
+    .container .container-right3 .form input,
+    .container .container-right3 .form select,
+    .container .container-right3 .form textarea {
+        width: 100% !important;
+    }
+}
+
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .container .container-left,
+    .container .container-right3 {
+        width: 100%;
+        margin-top: 20px !important;
+    }
+
+    .container .container-left h1 {
+        font-size: 40px !important;
+    }
+
+    .container .container-left p {
+        font-size: 22px !important;
+    }
+
+    .container .container-left button {
+        width: 90% !important;
+        max-width: 350px;
+    }
+
+    .container .container-left img {
+        width: 80%;
+        height: auto !important;
+    }
+
+    .container .container-right3 .form {
+        width: 100%;
+    }
+
+    .container .container-right3 .form input,
+    .container .container-right3 .form select,
+    .container .container-right3 .form textarea,
+    .container .container-right3 .form input[type="submit"] {
+        width: 100% !important;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .container .container-right3 .form p {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+
+    .container .container-left h1 {
+        font-size: 30px !important;
+    }
+
+    .container .container-left p {
+        font-size: 18px !important;
+    }
+
+    .container .container-left button {
+        font-size: 18px;
+        height: 50px;
+    }
+
+    .container .container-right3 .form input,
+    .container .container-right3 .form select,
+    .container .container-right3 .form textarea {
+        font-size: 16px;
+    }
+
+    .container .container-right3 .form textarea {
+        min-height: 100px;
+    }
+}

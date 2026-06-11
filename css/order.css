@@ -71,3 +71,168 @@
 .container-right3 .form span{
    margin-right: 8px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   RESPONSIVE CSS
+========================= */
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container .container-left,
+    .container .container-right3 {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .container .container-left img {
+        width: 50%;
+        height: auto !important;
+    }
+
+    .container-right3 form {
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+}
+
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .container .container-left,
+    .container .container-right3 {
+        width: 100%;
+        margin-top: 20px !important;
+    }
+
+    .container .container-left h1 {
+        font-size: 40px !important;
+    }
+
+    .container .container-left p {
+        font-size: 22px !important;
+    }
+
+    .container .container-left button {
+        width: 90% !important;
+        max-width: 350px;
+    }
+
+    .container .container-left img {
+        width: 80%;
+        height: auto !important;
+        margin-top: 10px !important;
+    }
+
+    .container-right3 .form {
+        margin-top: 0 !important;
+    }
+
+    .container-right3 form {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .container-right3 .form input[type="text"],
+    .container-right3 .form select,
+    .container-right3 .form textarea,
+    .container-right3 .form input[type="submit"] {
+        width: 100% !important;
+        max-width: 100%;
+    }
+
+    .container-right3 .form textarea {
+        height: 120px;
+    }
+
+    .container-right3 .form span,
+    .container-right3 .form label {
+        font-size: 16px !important;
+    }
+
+    .container-right3 .form input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+    }
+
+    .container-right3 p {
+        font-size: 16px;
+    }
+}
+
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+
+    .container .container-left h1 {
+        font-size: 30px !important;
+    }
+
+    .container .container-left p {
+        font-size: 18px !important;
+    }
+
+    .container .container-left button {
+        width: 95% !important;
+        font-size: 18px;
+        height: 50px;
+    }
+
+    .container-right3 form {
+        padding: 10px;
+    }
+
+    .container-right3 .form input[type="text"],
+    .container-right3 .form select,
+    .container-right3 .form textarea {
+        font-size: 16px;
+    }
+
+    .container-right3 .form textarea {
+        height: 100px;
+    }
+
+    .container-right3 .form input[type="submit"] {
+        font-size: 20px !important;
+        height: 50px !important;
+    }
+
+    .container-right3 .form span,
+    .container-right3 .form label {
+        display: inline-block;
+        margin-bottom: 8px;
+        font-size: 14px !important;
+    }
+}

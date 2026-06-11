@@ -362,3 +362,263 @@ hr {
     scale: 1.5;
     background-color: red;
 }
+
+
+
+
+
+
+
+
+
+/* =========================
+   RESPONSIVE CSS
+========================= */
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+
+    #menu ul li {
+        font-size: 18px;
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container .container-left,
+    .container .container-right,
+    .container .container-right1 {
+        width: 100%;
+        height: auto;
+        margin-top: 80px;
+    }
+
+    .container .container-right img,
+    .container .container-right1 img {
+        width: 80%;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .featured-outer1 {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .featured-icon {
+        width: 180px;
+        height: 180px;
+    }
+
+    .content {
+        width: 95%;
+        height: auto;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .content .left,
+    .content .right {
+        width: 100%;
+        height: auto;
+    }
+
+    .content .left img {
+        height: 250px;
+    }
+
+    .newsletter .email-box {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .newsletter .email-box input[type="email"] {
+        width: 60%;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .footer-content {
+        width: 50%;
+    }
+}
+
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+
+    #menu ul {
+        flex-direction: column;
+        position: relative;
+    }
+
+    #menu ul li {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #menu ul li ul {
+        position: static;
+        width: 100%;
+    }
+
+    #menu ul li ul li {
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container .container-left,
+    .container .container-right,
+    .container .container-right1 {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .container .container-right img,
+    .container .container-right1 img {
+        width: 90%;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .container .container-left button {
+        width: 80%;
+        max-width: 250px;
+        font-size: 22px;
+    }
+
+    .featured-outer1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured-icon {
+        width: 180px;
+        height: 180px;
+    }
+
+    .featured-icon i {
+        font-size: 70px;
+    }
+
+    .featured-img {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .featured-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        width: 95%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .content .left,
+    .content .right {
+        width: 100%;
+    }
+
+    .content .left img {
+        height: 220px;
+    }
+
+    .newsletter {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .newsletter .email-box {
+        width: 95%;
+        height: auto;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .newsletter .email-box input[type="email"] {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .newsletter .email-box input[type="submit"] {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footer-content {
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 30px !important;
+    }
+
+    h2 {
+        font-size: 24px !important;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    hr {
+        width: 50%;
+    }
+}
+
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+
+    .featured-icon {
+        width: 150px;
+        height: 150px;
+    }
+
+    .featured-icon i {
+        font-size: 55px;
+    }
+
+    .featured-icon p {
+        font-size: 16px;
+    }
+
+    .container .container-left button {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .content .left img {
+        height: 180px;
+    }
+
+    .newsletter .email-box {
+        border-radius: 30px;
+    }
+
+    .newsletter .email-box input[type="email"],
+    .newsletter .email-box input[type="submit"] {
+        height: 45px;
+    }
+}

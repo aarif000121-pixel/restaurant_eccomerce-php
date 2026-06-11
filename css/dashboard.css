@@ -113,3 +113,126 @@
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   RESPONSIVE CSS
+========================= */
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+
+    .leftdiv,
+    .sidenav {
+        width: 220px;
+    }
+
+    .rightdiv {
+        width: calc(100% - 220px);
+        margin-left: 220px;
+    }
+
+    .rightdiv .rightdiv-inner .innervalue {
+        width: 45% !important;
+        margin: 10px 2%;
+    }
+
+    .sidenav a,
+    .dropdown-btn {
+        font-size: 22px;
+    }
+}
+
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+
+    .container1 {
+        height: auto;
+    }
+
+    .leftdiv {
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+
+    .sidenav {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .rightdiv {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+        padding: 10px;
+    }
+
+    .rightdiv h1 {
+        font-size: 32px !important;
+    }
+
+    .rightdiv .rightdiv-inner {
+        height: auto;
+        overflow: hidden;
+    }
+
+    .rightdiv .rightdiv-inner .innervalue {
+        width: 46% !important;
+        float: left;
+        margin: 2%;
+        font-size: 30px;
+    }
+
+    .sidenav a,
+    .dropdown-btn {
+        font-size: 20px;
+    }
+}
+
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+
+    .rightdiv h1 {
+        font-size: 26px !important;
+    }
+
+    .rightdiv .rightdiv-inner .innervalue {
+        width: 96% !important;
+        float: none;
+        margin: 10px auto;
+        height: 180px !important;
+        font-size: 28px;
+    }
+
+    .sidenav a,
+    .dropdown-btn {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .fa {
+        font-size: 24px;
+    }
+}
