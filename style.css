@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Main menu */
+#menu ul {
+    list-style: none;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Main menu items */
+#menu ul li {
+    background-color: green;
+    width: 16.66%;
+    text-align: center;
+    color: white;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Hover effect */
+#menu ul li:hover {
+    background-color: orange;
+}
+
+/* Dropdown menu */
+#menu ul li ul {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: none;
+}
+
+/* Dropdown items */
+#menu ul li ul li {
+    width: 250px;
+    background-color: green;
+    border-top: 1px solid white;
+}
+
+/* Show dropdown on hover */
+#menu ul li:hover ul {
+    display: block;
+}
+
+/* Dropdown hover */
+#menu ul li ul li:hover {
+    background-color: orange;
+}
+
+.container {
+    border: 0px solid black;
+    height: 100vh;
+    display: flex;
+    /* width: 100vh; */
+}
+
+.container .container-left {
+    border: 0px solid black;
+    width: 40%;
+    height: 95%;
+    margin-top: 8%;
+    text-align: center;
+
+}
+
+.container .container-left button {
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 30px;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.container .container-right {
+    border: 0px solid black;
+    margin-top: 23%;
+    width: 60%;
+    height: 94%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container .container-right img {
+    width: 70%;
+    margin-top: 10%;
+    margin-left: 5%;
+    animation: round 25s linear infinite;
+}
+
+@keyframes round {
+    0% {
+        transform: translate(0deg);
+    }
+
+    100% {
+        transform: translate(-0%, -0%) rotate(360deg);
+    }
+}
+
+.featured-outer1 {
+    border: 2px solid red;
+    padding: 10px;
+    width: 95%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.featured-icon {
+    border: 0px solid black;
+    width: 205px;
+    height: 205px;
+    padding: 7px;
+    /* display: flex; */
+    flex-direction: column;
+    /* icon and text vertical */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 100px 0px 100px 0px;
+    transition: transform 1.5s ease;
+}
+
+.featured-icon i {
+    font-size: 100px;
+}
+
+.featured-icon:hover {
+    transform: rotate(360deg);
+}
+
+.featured-icon p {
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+hr {
+    width: 20%;
+    margin: 20px auto;
+    background-color: green;
+    margin-top: 5px;
+    border: 4px dashed white;
+    font-size: 20px;
+}
+
+.featured-outer1 {
+    border: 3px solid black;
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+
+    padding: 5px;
+}
+
+.featured-img {
+    border: 2px solid red;
+    float: left;
+    margin: 15px;
+    margin-left: 2%;
+
+}
+
+/* chatgpt open */
+
+.featured-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* chatgpt close */
+.featured-outer1 img {
+    width: 350px;
+    height: 210px;
+}
+
+.featured-img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+.content {
+    border: 0px solid black;
+    width: 85%;
+    height: 300px;
+    box-shadow: 5px 5px 10px gray;
+    display: flex;
+}
+
+.content:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+
+}
+
+.content .left {
+    border: 0px solid red;
+    height: 100%;
+    width: 30%;
+
+    margin-left: 5px;
+    box-sizing: border-box;
+}
+
+.content .right {
+    border: 0px solid green;
+    height: 100%;
+    width: calc(70% - 5px);
+    float: left;
+    padding-left: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    padding-right: 10px;
+    text-align: justify;
+}
+
+.content .left img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.newsletter {
+    border: 0px solid black;
+    height: 400px;
+    width: 100%;
+    background: url(images/palakpaneer2.jpg) center;
+    repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter .email-box {
+    border: 2px solid yellow;
+    height: 250px;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 100px 0px 100px 0px;
+}
+.newsletter .email-box input[type="email"] {
+    width: 600px;
+    height: 50px;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 25px;
+    outline: none;
+    border: 3px solid yellow;
+}
+.newsletter .email-box input[type="submit"] {
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 25px;
+    background-color: yellow;
+    color: black;
+    border: 0px solid green;
+     
+}
+.footer{
+    border: 0px solid red;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    margin-top: 4%;
+    box-shadow: 10px 10px 10px 10px gray;
+    background-color: rgb(221, 214, 214);
+    /* color: white; */
+}
+
+.footer-content{
+    border:0px solid rgb(125, 181, 125);
+    height: 350px;
+    width: 25%;
+    padding: 10px;
+}
+
+.footer-content p{
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.footer-content p i {
+    color: green;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.container .container-right1 {
+    border: 0px solid black;
+    margin-top: 18%;
+    width: 60%;
+    height: 88%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .container-right1 img {
+    border: 0px solid red;
+    width: 70%;
+    margin-top: 5%;
+    margin-left: 5%;
+    /* animation: round 25s linear infinite; */
+}
+.featured-outer {
+    border: 0px solid black;
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+}
+.featured-img{
+    border: 0px solid blue;
+    height: 210px; 
+    width: 350px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+.featured-img img {
+     object-fit: cover;
+    border-radius: 50px;
+    width: 75%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px gray;
+    border: 3px solid white;
+}
+
+.container .container-right1 input[type="radio"]{
+    scale: 1.5;
+    background-color: red;
+}
